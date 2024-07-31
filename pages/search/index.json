@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ancestor":"../components/contents/ancestor",
+    "contents":"../components/contents/contents",
+    "searchview":"../components/searchview/searchview",
+    "loading":"../components/loading/loading",
+    "toast":"../components/toast/toast"
+  }
+}

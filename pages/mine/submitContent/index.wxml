@@ -1,0 +1,33 @@
+<form bindsubmit="sumbit">
+	<view style="font-size: 33rpx;display: flex;flex-direction: column;align-items: center;">
+		<view style="display: flex;align-items: center;margin-top: 35rpx;width: 92vw;position: relative;">
+			<view style="height:33rpx;width: 5rpx;background-color: #FF6D9E;position: absolute;left: 0;"></view>
+			<view style="margin-left: 32rpx;">选择分类</view>
+		</view>
+        <picker bindchange="categoryChange" value="{{categoryIndex}}" range="{{categories}}" range-key="name">
+            <view style="margin-top: 25rpx;width: 100vw;padding: 32rpx;box-sizing: border-box;">
+                <van-cell title="{{ categories[categoryIndex].name }}" value="选择" is-link />
+            </view>
+        </picker>
+        <view style="display: flex;align-items: center;margin-top: 35rpx;width: 92vw;position: relative;">
+			<view style="height:33rpx;width: 5rpx;background-color: #FF6D9E;position: absolute;left: 0;"></view>
+			<view style="margin-left: 32rpx;">文案图片</view>
+		</view>
+	    <view bindtap="uploadFile" style="min-height: 200rpx;margin-top: 25rpx;width: 92vw;box-sizing: border-box;background-color: #dddddd;display: flex;align-items: center;justify-content: center;position: relative;">
+			<image style="width: 100%;height: 200rpx;" mode="widthFix" src="{{Location}}"></image>
+			<view style="position: absolute;font-size: 55rpx;">+</view>
+		</view>
+		<view style="display: flex;align-items: center;margin-top: 35rpx;width: 92vw;position: relative;">
+			<view style="height:33rpx;width: 5rpx;background-color: #FF6D9E;position: absolute;left: 0;"></view>
+			<view style="margin-left: 32rpx;">文案内容</view>
+		</view>
+		<textarea type="text"
+			name='suggest'
+			bindinput="onChange"
+			placeholder="请输入文字描述"
+			style="height:300rpx;background: white;margin-top: 25rpx;width: 92vw;padding: 20rpx;box-sizing: border-box;" />
+		<button bindtap="submit"
+			style="display: flex;align-items: center;justify-content: center;font-size: 38rpx;width: 60vw;height: 90rpx;background-color: {{disable?'#ffd6e6':'#FF6D9E'}};border-radius: 10rpx;color: white;margin-top: 77rpx;margin-bottom: 100rpx;">申请发布</button>
+	
+	</view>
+</form>

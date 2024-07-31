@@ -1,0 +1,12 @@
+{
+  "navigationStyle": "custom",
+  "disableScroll":true,
+  "usingComponents": {
+    "navigationBar":"../components/navigationBar/index",
+    "tab-swiper":"../components/tab-swiper/index",
+    "contents":"../components/contents/contents",
+    "ancestor":"../components/contents/ancestor",
+    "loading":"../components/loading/loading",
+    "toast":"../components/toast/toast"
+  }
+}

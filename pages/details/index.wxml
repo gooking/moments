@@ -1,0 +1,12 @@
+<ancestor>
+    <scroll-view scrollY="true">
+        <contents bind:showtoast="showtoast" bindupdateSaveClick="updateSaveClick" bindupdateShareClick="updateShareClick" id="{{'itemtemplate-'+item.id}}" idx="{{idx}}" index="{{index}}" nickName="{{nickName}}"
+                    avatarUrl="{{avatarUrl}}" item="{{item}}"></contents>
+        <view class="btn_class">
+            <button bindtap="goHome" type="primary">查看更多</button>
+        </view>
+    </scroll-view>
+    <toast style="z-index: 9999;"
+            show="{{showtoast}}"
+            bind:playvideo="playvideo"></toast>
+</ancestor>

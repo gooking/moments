@@ -1,0 +1,106 @@
+{
+    "setting": {
+        "compileHotReLoad": true,
+        "urlCheck": true
+    },
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "",
+                    "pathName": "pages/discover/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/search/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/other/sharedpic/index",
+                    "query": "obj=%257B%2522categoryId%2522%253A108353%252C%2522commentNumber%2522%253A0%252C%2522dateAdd%2522%253A%25222022-12-13%252006%253A41%253A52%2522%252C%2522dateUpdate%2522%253A%25222022-12-15%252021%253A48%253A43%2522%252C%2522descript%2522%253A%2522%25E6%259C%2589%25E5%258F%25A5%25E8%25AF%259D%25E5%258F%25AB%25E2%2580%259C%25E5%25B0%258F%25E9%25B9%25BF%25E6%2592%259E%25E2%2580%259D%255Cn%25E6%259C%2580%25E9%2580%2582%25E5%2590%2588%25E5%25BD%25A2%25E5%25AE%25B9%25E6%2583%2585%25E7%25BB%25AA%25E5%258C%2596%25E7%259A%2584%25E5%25A5%25B3%25E4%25BA%25BA%25E3%2580%2582%2522%252C%2522hasTourJourney%2522%253Afalse%252C%2522id%2522%253A1034366%252C%2522isDraft%2522%253Afalse%252C%2522isRecommend%2522%253Afalse%252C%2522keywords%2522%253A%2522%25E6%259C%2589%25E5%258F%25A5%25E8%25AF%259D%25E5%258F%25AB%25E2%2580%259C%25E5%25B0%258F%25E9%25B9%25BF%25E6%2592%259E%25E2%2580%259D%252C%25E6%259C%2580%25E9%2580%2582%25E5%2590%2588%25E5%25BD%25A2%25E5%25AE%25B9%25E6%2583%2585%25E7%25BB%25AA%25E5%258C%2596%25E7%259A%2584%25E5%25A5%25B3%25E4%25BA%25BA%25E3%2580%2582%2522%252C%2522numberExt1%2522%253A10%252C%2522numberExt2%2522%253A7%252C%2522numberFav%2522%253A1%252C%2522organizeEditable%2522%253Afalse%252C%2522paixu%2522%253A0%252C%2522pic%2522%253A%2522https%253A%252F%252Fdcdn.it120.cc%252F2022%252F12%252F13%252F1afe884e-5586-424d-b222-e00437ffe64e.png%2522%252C%2522shopId%2522%253A0%252C%2522signScoreSend%2522%253A0%252C%2522signType%2522%253A1%252C%2522status%2522%253A2%252C%2522statusStr%2522%253A%2522%25E5%25AE%25A1%25E6%25A0%25B8%25E9%2580%259A%25E8%25BF%2587%2522%252C%2522title%2522%253A%2522%25E6%259C%2589%25E5%258F%25A5%25E8%25AF%259D%25E5%258F%25AB%25E2%2580%259C%25E5%25B0%258F%25E9%25B9%25BF%25E6%2592%259E%25E2%2580%259D%25EF%25BC%258C%25E6%259C%2580%25E9%2580%2582%25E5%2590%2588%25E5%25BD%25A2%25E5%25AE%25B9%25E6%2583%2585%25E7%25BB%25AA%25E5%258C%2596%25E7%259A%2584%25E5%25A5%25B3%25E4%25BA%25BA%25E3%2580%2582%2522%252C%2522uid%2522%253A0%252C%2522unusefulNumber%2522%253A0%252C%2522usefulNumber%2522%253A0%252C%2522userId%2522%253A70%252C%2522views%2522%253A0%252C%2522textSelected%2522%253Afalse%257D",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/details/index",
+                    "query": "id=1034366",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/collect/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/details/index",
+                    "query": "id=1034366",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/mine/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/mine/submitContent/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/mine/faq/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/about/index",
+                    "query": "key=disclaimer",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/mine/suggest/index",
+                    "query": "type=%5Bobject%20Object%5D",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/mine/feedback/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/mine/submitContent/index",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    },
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "projectname": "%E6%9C%8B%E5%8F%8B%E5%9C%88%E6%96%87%E6%A1%88%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+    "libVersion": "3.5.1"
+}

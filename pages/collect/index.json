@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "ancestor":"../components/contents/ancestor",
+    "contents":"../components/contents/contents",
+    "toast":"../components/toast/toast"
+  },
+  "navigationBarTitleText": "我的收藏"
+}

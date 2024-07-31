@@ -1,0 +1,63 @@
+<view class="page_class">
+    <view class="sub">
+        <view class="faq_class">
+            <view class="item_class">
+                <text class="title_class">1、如何下载素材？</text>
+                <view class="content_class">
+                    <view class="serials_class">●</view>
+                    <text>打开小程序后，进入到首页，找到自己喜欢的素材后，点击下方的“一键保存”按钮，图片就保存到手机里面了，同时文案已复制剪切板了。
+          </text>
+                </view>
+                <view class="content_class">
+                </view>
+            </view>
+            <view class="item_partition_class"></view>
+            <view class="item_class">
+                <text class="title_class">2、如何收藏素材？</text>
+                <view class="content_class">
+                    <view class="serials_class">●</view>
+                    <text>长按文案，根据提示点击“收藏”，在「我的」 - 「我的收藏」页面，查看收藏的素材。
+          </text>
+                </view>
+                <view class="content_class">
+                   
+                </view>
+            </view>
+            <view class="item_partition_class"></view>
+            <view class="item_class">
+                <text class="title_class">3、如何生成每日画报？</text>
+                <view class="content_class">
+                    <view class="serials_class">●</view>
+                    <text>打开小程序后，进入到首页，找到自己喜欢的素材后，点击文字内容区域，将会跳转到生成画报界面，点击底部“保存图片”按钮，就可以将生成的海报图片保存到手机相册了。
+          </text>
+                </view>
+                <view class="content_class">
+                  
+                </view>
+            </view>
+            <view class="item_partition_class"></view>
+            <view class="item_class">
+                <text class="title_class">4、一键保存失败，图片无法保存怎么办？</text>
+                <view class="content_class">
+                    <view class="serials_class">●</view>
+                    <text>请开启相册权限后重新尝试，或检查网络状态是否连接正常。
+          </text>
+                </view>
+            </view>
+            <view class="item_partition_class"></view>
+            <view class="item_class">
+                <text class="title_class">5、如何订阅素材更新通知提醒？</text>
+                <view class="content_class">
+                    <view class="serials_class">●</view>
+                    <text>在「我的」 页面，点击【素材更新提醒】后，根据提示框，点击允许后，次日将会收到素材推送通知提醒。
+          </text>
+                </view>
+            </view>
+            <view class="item_partition_class" style="height: 40rpx;"></view>
+        </view>
+    </view>
+    <view class="placeholder-view"></view>
+    <view class="btn_class">
+        <button bindtap="kefu">仍有问题？联系客服</button>
+    </view>
+</view>

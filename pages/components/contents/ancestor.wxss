@@ -1,0 +1,394 @@
+[data-weui-theme=light],page {
+  --weui-BG-0: #ededed;
+  --weui-BG-1: #f7f7f7;
+  --weui-BG-2: #fff;
+  --weui-BG-3: #f7f7f7;
+  --weui-BG-4: #4c4c4c;
+  --weui-BG-5: #fff;
+  --weui-FG-0: rgba(0,0,0,0.9);
+  --weui-FG-HALF: rgba(0,0,0,0.9);
+  --weui-FG-1: rgba(0,0,0,0.5);
+  --weui-FG-2: rgba(0,0,0,0.3);
+  --weui-FG-3: rgba(0,0,0,0.1);
+  --weui-RED: #fa5151;
+  --weui-ORANGE: #fa9d3b;
+  --weui-YELLOW: #ffc300;
+  --weui-GREEN: #91d300;
+  --weui-LIGHTGREEN: #95ec69;
+  --weui-BRAND: #07c160;
+  --weui-BLUE: #10aeff;
+  --weui-INDIGO: #1485ee;
+  --weui-PURPLE: #6467f0;
+  --weui-WHITE: #fff;
+  --weui-LINK: #576b95;
+  --weui-TEXTGREEN: #06ae56;
+  --weui-FG: #000;
+  --weui-BG: #fff;
+  --weui-TAG-TEXT-ORANGE: #fa9d3b;
+  --weui-TAG-BACKGROUND-ORANGE: rgba(250,157,59,0.1);
+  --weui-TAG-TEXT-GREEN: #06ae56;
+  --weui-TAG-BACKGROUND-GREEN: rgba(6,174,86,0.1);
+  --weui-TAG-TEXT-BLUE: #10aeff;
+  --weui-TAG-BACKGROUND-BLUE: rgba(16,174,255,0.1);
+  --weui-TAG-TEXT-BLACK: rgba(0,0,0,0.5);
+  --weui-TAG-BACKGROUND-BLACK: rgba(0,0,0,0.05);
+}
+
+[data-weui-theme=dark] {
+  --weui-BG-0: #191919;
+  --weui-BG-1: #1f1f1f;
+  --weui-BG-2: #232323;
+  --weui-BG-3: #2f2f2f;
+  --weui-BG-4: #606060;
+  --weui-BG-5: #2c2c2c;
+  --weui-FG-0: hsla(0,0%,100%,0.8);
+  --weui-FG-HALF: hsla(0,0%,100%,0.6);
+  --weui-FG-1: hsla(0,0%,100%,0.5);
+  --weui-FG-2: hsla(0,0%,100%,0.3);
+  --weui-FG-3: hsla(0,0%,100%,0.05);
+  --weui-RED: #fa5151;
+  --weui-ORANGE: #c87d2f;
+  --weui-YELLOW: #cc9c00;
+  --weui-GREEN: #74a800;
+  --weui-LIGHTGREEN: #28b561;
+  --weui-BRAND: #07c160;
+  --weui-BLUE: #10aeff;
+  --weui-INDIGO: #1196ff;
+  --weui-PURPLE: #8183ff;
+  --weui-WHITE: hsla(0,0%,100%,0.8);
+  --weui-LINK: #7d90a9;
+  --weui-TEXTGREEN: #259c5c;
+  --weui-FG: #fff;
+  --weui-BG: #000;
+  --weui-TAG-TEXT-ORANGE: rgba(250,157,59,0.6);
+  --weui-TAG-BACKGROUND-ORANGE: rgba(250,157,59,0.1);
+  --weui-TAG-TEXT-GREEN: rgba(6,174,86,0.6);
+  --weui-TAG-BACKGROUND-GREEN: rgba(6,174,86,0.1);
+  --weui-TAG-TEXT-BLUE: rgba(16,174,255,0.6);
+  --weui-TAG-BACKGROUND-BLUE: rgba(16,174,255,0.1);
+  --weui-TAG-TEXT-BLACK: hsla(0,0%,100%,0.5);
+  --weui-TAG-BACKGROUND-BLACK: hsla(0,0%,100%,0.05);
+}
+
+[data-weui-theme=light],page {
+  --weui-BG-COLOR-ACTIVE: #ececec;
+}
+
+[data-weui-theme=dark] {
+  --weui-BG-COLOR-ACTIVE: #373737;
+}
+
+[data-weui-theme=light],page {
+  --weui-BTN-DISABLED-FONT-COLOR: rgba(0,0,0,0.2);
+}
+
+[data-weui-theme=dark] {
+  --weui-BTN-DISABLED-FONT-COLOR: hsla(0,0%,100%,0.2);
+}
+
+[data-weui-theme=light],page {
+  --weui-BTN-DEFAULT-BG: #f2f2f2;
+}
+
+[data-weui-theme=dark] {
+  --weui-BTN-DEFAULT-BG: hsla(0,0%,100%,0.08);
+}
+
+[data-weui-theme=light],page {
+  --weui-BTN-DEFAULT-COLOR: #06ae56;
+}
+
+[data-weui-theme=dark] {
+  --weui-BTN-DEFAULT-COLOR: hsla(0,0%,100%,0.8);
+}
+
+[data-weui-theme=light],page {
+  --weui-BTN-DEFAULT-ACTIVE-BG: #e6e6e6;
+}
+
+[data-weui-theme=dark] {
+  --weui-BTN-DEFAULT-ACTIVE-BG: hsla(0,0%,100%,0.126);
+}
+
+[data-weui-theme=light],page {
+  --weui-DIALOG-LINE-COLOR: rgba(0,0,0,0.1);
+}
+
+[data-weui-theme=dark] {
+  --weui-DIALOG-LINE-COLOR: hsla(0,0%,100%,0.1);
+}
+
+.weui-dialog {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  background-color: var(--weui-BG-2);
+  border-radius: 24rpx;
+  display: flex;
+  flex-direction: column;
+  left: 50rpx;
+  max-height: 90%;
+  overflow: hidden;
+  position: fixed;
+  right: 50rpx;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5000;
+}
+
+.weui-dialog__hd {
+  padding: 64rpx 48rpx 32rpx;
+}
+
+.weui-dialog__title {
+  font-size: 34rpx;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.weui-dialog__bd {
+  -webkit-overflow-scrolling: touch;
+  word-wrap: break-word;
+  color: var(--weui-FG-1);
+  font-size: 34rpx;
+  hyphens: auto;
+  line-height: 1.4;
+  margin-bottom: 64rpx;
+  overflow-y: auto;
+  padding: 0 48rpx;
+}
+
+.weui-dialog__bd:first-child {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: center;
+  color: var(--weui-FG-0);
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 80rpx;
+  padding: 64rpx 48rpx 0;
+}
+
+.weui-dialog__bd:first-child,.weui-dialog__ft {
+  display: flex;
+}
+
+.weui-dialog__ft {
+  font-size: 34rpx;
+  line-height: 112rpx;
+  min-height: 112rpx;
+  position: relative;
+}
+
+.weui-dialog__ft:after {
+  border-top: 2rpx solid var(--weui-DIALOG-LINE-COLOR);
+  color: var(--weui-DIALOG-LINE-COLOR);
+  content: " ";
+  height: 2rpx;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleY(.5);
+  transform-origin: 0 0;
+}
+
+.weui-dialog__btn {
+  -webkit-box-flex: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  color: var(--weui-LINK);
+  display: block;
+  flex: 1;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+}
+
+.weui-dialog__btn:active {
+  background-color: var(--weui-BG-COLOR-ACTIVE);
+}
+
+.weui-dialog__btn:after {
+  border-left: 1px solid var(--weui-DIALOG-LINE-COLOR);
+  bottom: 0;
+  color: var(--weui-DIALOG-LINE-COLOR);
+  content: " ";
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleX(.5);
+  transform-origin: 0 0;
+  width: 1px;
+}
+
+.weui-dialog__btn:first-child:after {
+  display: none;
+}
+
+.weui-dialog__btn_default {
+  color: var(--weui-FG-HALF);
+}
+
+.weui-skin_android .weui-dialog {
+  box-shadow: 0 12rpx 60rpx 0 rgba(0,0,0,.1);
+  text-align: left;
+}
+
+.weui-skin_android .weui-dialog__title {
+  font-size: 44rpx;
+  line-height: 1.4;
+}
+
+.weui-skin_android .weui-dialog__hd {
+  text-align: left;
+}
+
+.weui-skin_android .weui-dialog__bd {
+  color: var(--weui-FG-1);
+  text-align: left;
+}
+
+.weui-skin_android .weui-dialog__bd:first-child {
+  color: var(--weui-FG-0);
+}
+
+.weui-skin_android .weui-dialog__ft {
+  display: block;
+  line-height: 80rpx;
+  min-height: 80rpx;
+  padding: 0 48rpx 32rpx;
+  text-align: right;
+}
+
+.weui-skin_android .weui-dialog__ft:after {
+  display: none;
+}
+
+.weui-skin_android .weui-dialog__btn {
+  display: inline-block;
+  padding: 0 .8em;
+  vertical-align: top;
+}
+
+.weui-skin_android .weui-dialog__btn:after {
+  display: none;
+}
+
+.weui-skin_android .weui-dialog__btn:last-child {
+  margin-right: -.8em;
+}
+
+.weui-skin_android .weui-dialog__btn_default {
+  color: var(--weui-FG-HALF);
+}
+
+.fadeIn {
+  animation: c .3s forwards;
+}
+
+.weui-mask {
+  background: rgba(0,0,0,.6);
+}
+
+.weui-mask,.weui-mask_transparent {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+}
+
+.weui-dialog {
+  background-color: initial;
+}
+
+.weui-dialog__ {
+  background-color: #fff;
+  border-radius: 24rpx;
+}
+
+.weui-dialog__bd {
+  font-size: 32rpx;
+  margin-bottom: 45rpx;
+  text-align: left;
+}
+
+.dialog_nr {
+  align-items: center;
+  color: #888;
+  display: flex;
+  font-weight: 400;
+  padding-bottom: 10rpx;
+  padding-right: 20rpx;
+  padding-top: 10rpx;
+}
+
+.dialog_nr image {
+  height: 40rpx;
+  position: absolute;
+  right: 40rpx;
+  width: 40rpx;
+}
+
+.weui-dialog__btn {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24rpx;
+  display: flex;
+  font-size: 36rpx;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.weui-dialog__btn_primary {
+  color: var(--color_main);
+}
+
+.action-sheet_btn {
+  background-color: #fff;
+  font-size: 34rpx;
+  line-height: normal;
+  margin: -32rpx;
+  padding: 32rpx;
+}
+
+.action-sheet_btn::after {
+  border: none;
+}
+
+.ad_class {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  margin-top: 20rpx;
+  position: relative;
+  width: 100%;
+}
+
+.popover-btn-item {
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.popover-btn-item::after {
+  border: none;
+}
+
+.close_class {
+  height: 60rpx;
+  margin-top: 30rpx;
+  width: 60rpx;
+}

@@ -1,0 +1,25 @@
+<ancestor collect="{{false}}"
+    bind:del="del">
+    <contents bind:showtoast="showtoast"
+        wx:for="{{lists}}"
+        wx:for-index="idx"
+        wx:key="item"
+        bindupdateSaveClick="updateSaveClick"
+        bindupdateShareClick="updateSahareClick"
+        nickName="{{nickName}}"
+        avatarUrl="{{avatarUrl}}"
+        id="{{'contents-'+index+'-'+idx}}"
+        idx="{{idx}}"
+        index="{{index}}"
+        item="{{item.news}}"></contents>
+    <view wx:if="{{ bottom }}"
+        style="display: flex;justify-content: center;color: #bbb;font-size: 30rpx;padding:25rpx 0 50rpx 0;">到底啦，我是有底线的</view>
+    <view wx:if="{{nodata}}"
+        style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%; flex-flow: column; position: absolute;left: 50%;top: 40%;  transform: translate(-50%,-50%);color: #bbb;font-size: 30rpx;">
+        <image style="height: 180rpx;width: 180rpx;margin-bottom: 10rpx;"
+            src="../images/img_blank.png"> </image>
+        <text>空空如也</text>
+    </view>
+    <toast style="z-index: 9999;" show="{{showtoast}}" bind:playvideo="playvideo"></toast>
+
+</ancestor>

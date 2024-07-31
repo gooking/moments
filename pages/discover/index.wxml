@@ -1,0 +1,15 @@
+<view>
+    <scroll-view>
+        <view wx:for="{{bannerList}}" wx:key="key">
+            <view bindtap="onRecommend" class="categories_class" data-item="{{item}}">
+                <view class="icon_class">
+                    <image mode="aspectFit" src="{{item.picUrl}}"></image>
+                </view>
+                <view class="t_class">
+                    <text class="title_class">{{item.title}}</text>
+                    <text class="introduce_class">{{item.remark}}</text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

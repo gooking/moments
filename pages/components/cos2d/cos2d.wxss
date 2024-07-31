@@ -1,0 +1,28 @@
+@keyframes scale {
+  0% {
+    scale: 0.97;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.97;
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    scale: 0.96;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.96;
+  }
+}
+
+.animation {
+  animation: 1.8s linear 0s infinite scale;
+  -webkit-animation: 1.8s linear 0s infinite scale;
+}

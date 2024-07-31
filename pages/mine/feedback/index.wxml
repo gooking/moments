@@ -1,0 +1,22 @@
+<form bindsubmit="sumbit">
+<view style="font-size: 33rpx;display: flex;flex-direction: column;align-items: center;">
+<view style="display: flex;align-items: center;margin-top: 35rpx;width: 92vw;position: relative;">
+<view style="height:33rpx;width: 5rpx;background-color: #FF6D9E;position: absolute;left: 0;"></view>
+<view style="margin-left: 32rpx;">您卖什么产品</view>
+</view>
+<textarea type="text" name='product' bindinput="inputa" value="{{valuea}}" placeholder="请输入产品名称" style="height:200rpx;background: white;margin-top: 25rpx;width: 92vw;padding: 20rpx;box-sizing: border-box;"/>
+
+<view style="display: flex;align-items: center;margin-top: 35rpx;width: 92vw;position: relative;">
+<view style="height:33rpx;width: 5rpx;background-color: #FF6D9E;position: absolute;left: 0;"></view>
+<view style="margin-left: 32rpx;">您想要哪些素材？</view>
+</view>
+<textarea type="text" name='source' bindinput="inputb" value="{{valueb}}" placeholder="请详细描述想要的素材内容，方便我们及时跟进" style="height:300rpx;background: white;margin-top: 25rpx;width: 92vw;padding: 20rpx;box-sizing: border-box;"/>
+
+<view style="display: flex;align-items: center;margin-top: 35rpx;width: 92vw;position: relative;">
+<view style="height:33rpx;width: 5rpx;background-color: #FF6D9E;position: absolute;left: 0;"></view>
+<view style="margin-left: 32rpx;">您的微信</view>
+</view>
+<textarea type="text" name='v3' bindinput="inputc" value="{{valuec}}" placeholder="请输入您的微信号，方便与您联系" style="height:100rpx;background: white;margin-top: 25rpx;width: 92vw;padding: 20rpx;box-sizing: border-box;"/>
+<button form-type='submit' style="display: flex;align-items: center;justify-content: center;font-size: 38rpx;width: 60vw;height: 90rpx;background-color: {{disable?'#ffd6e6':'#FF6D9E'}};border-radius: 10rpx;color: white;margin-top: 77rpx;border:0!important;">提交</button>
+</view>
+</form>

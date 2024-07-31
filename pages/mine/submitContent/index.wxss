@@ -1,0 +1,4 @@
+page{
+	background-color: #f6f9f8;
+  }
+  button::after{border-width:0}

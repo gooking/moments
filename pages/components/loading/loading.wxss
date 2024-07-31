@@ -1,0 +1,43 @@
+@keyframes mymove {
+  33% {
+    opacity: 0.3;
+  }
+
+  66% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Safari 和 Chrome:*/
+@-webkit-keyframes mymove {
+  33% {
+    opacity: 0.3;
+  }
+
+  66% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.ani {
+  animation: 1.2s linear 0s infinite mymove;
+  -webkit-animation: 1.2s linear 0s infinite mymove;
+}
+
+.ani1 {
+  animation: 1.2s linear 0.4s infinite mymove;
+  -webkit-animation: 1.2s linear 0.4s infinite mymove;
+}
+
+.ani2 {
+  animation: 1.2s linear 0.8s infinite mymove;
+  -webkit-animation: 1.2s linear 0.8s infinite mymove;
+}

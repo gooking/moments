@@ -1,0 +1,16 @@
+<view>
+    <view class="img_class">
+        <text wx:if="{{!picRate}}">图片生成中...</text>
+        <image showMenuByLongpress bindload="picLoad" bindtap="previewImage" class="{{!picRate?'':'pic_box-shadow'}}" mode="widthFix" src="{{'https://www.xzxwx.top/share/share_1_ec49663ea1df4421b62206b7ecce861e430b8fb99ab6c3a2099829544ebb8cc2.png'}}"></image>
+    </view>
+    <view class="item-btn" style="padding-bottom: {{20}}rpx">
+        <button openType="share">
+            <image src="../../images/m_share.png"></image>
+            <text>发送给朋友</text>
+        </button>
+        <button bindtap="saveImage">
+            <image src="../../images/m_save.png"></image>
+            <text>保存分享图</text>
+        </button>
+    </view>
+</view>

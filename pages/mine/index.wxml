@@ -1,0 +1,106 @@
+<view class="mine_class">
+    <addme eventBusEmit="{{eventBusEmit}}" eventBusOn="{{eventBusOn}}"></addme>
+    <view class="userinfo">
+        <!-- <view bindtap="onUserAvatar">
+            <open-data class="userinfo-avatar" defaultAvatar="" type="userAvatarUrl"></open-data>
+        </view> -->
+        <button class="avatar" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+            <image class="avatar-img" src="{{ avatarUrl ? avatarUrl : '/images/default.png' }}" mode="aspectFill"></image>
+        </button>
+        <view bindtap="editNick" class="userinfo-nickname">
+            <text>Hi, </text>
+            {{ nick ? nick : '微信用户' }}
+        </view>
+    </view>
+    <view class="mine-item-class">
+        <view class="mine-item">
+            <button bindtap="onCollect">
+                <image src="../images/collect.png"></image>
+                <view>我的收藏</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item item-boundary item_partition_class">
+            <button bindtap="_officialAccountShow">
+                <image src="../images/service.png"></image>
+                <view>关注公众号</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item ">
+            <button bindtap="onSubscribe">
+                <image src="../images/subscribe.png"></image>
+                <view>素材更新提醒</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item ">
+            <button bindtap="onSubmitContent">
+                <image src="../images/subscribe.png"></image>
+                <view>素材申请收录</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item item-boundary ">
+            <button bindtap="onFAQ">
+                <image src="../images/faq.png"></image>
+                <view>常见问题</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item">
+            <button bindtap="disclaimer">
+                <image src="../images/exemption.png"></image>
+                <view>免责申明</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item">
+            <button bindtap="gosuggest">
+                <image src="../images/suggest.png"></image>
+                <view>意见反馈</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+        <view class="mine-item item-boundary">
+            <button bindtap="kefu">
+                <image src="../images/customer_service.png"></image>
+                <view>联系客服</view>
+                <view class="into-class"></view>
+            </button>
+        </view>
+    </view>
+    <view class="copyright_class">
+        <view>
+            <text class="line_class">一</text>
+            <text class="copyright_name_class">{{footerTitle}}</text>
+            <text class="line_class">一</text>
+        </view>
+        <text class="copyright_explain_class">{{footerContent}}</text>
+    </view>
+</view>
+
+
+<van-dialog
+  use-slot
+  title="修改昵称"
+  show="{{ nickShow }}"
+  show-cancel-button
+  bind:confirm="_editNick"
+>
+  <van-field
+    model:value="{{ nick }}"
+    type="nickname"
+    placeholder="请输入昵称"
+    size="large"
+    clearable
+  />
+</van-dialog>
+<van-dialog
+  use-slot
+  title="长按识别二维码并关注"
+  confirmButtonText="知道了"
+  show="{{ officialAccountShow }}"
+>
+    <image src="{{ official_account }}" mode="widthFix" show-menu-by-longpress></image>
+</van-dialog>

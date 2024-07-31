@@ -1,0 +1,8 @@
+
+
+<swiper bindchange="handleSwiperChange" current="{{swiperchange}}" duration="500" data-len="{{tabs.length}}" style="width: 100%;height: {{contentHeight}}px;background-color: {{backgroundColor}};margin-top: {{navheight}}px;">
+        <swiper-item circular="false" wx:for="{{tabs}}" wx:key="name">
+        <!-- 插槽 -->
+            <slot name="tab-content-{{index}}"></slot>
+        </swiper-item>
+</swiper>

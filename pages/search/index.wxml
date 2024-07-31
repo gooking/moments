@@ -1,0 +1,43 @@
+<ancestor subscription_location="25">
+    <searchview bindsearchFunction="searchFunction"
+        hotKeys="{{hotKeys}}">
+        <view class="result_class">
+            <scroll-view style="height: 100%;"
+                scroll-y
+                refresher-triggered="{{bool}}"
+                refresher-enabled
+                bindrefresherrefresh="herrefresh"
+                bindscrolltolower="tolower"
+                data-index="{{index}}"
+                slot="tab-content-{{index}}"
+                scrollTop="{{sItem.topNum}}">
+                <loading style="height: 30rpx;"
+                    show="{{downRefresh}}"></loading>
+                <contents bind:showtoast="showtoast"
+                    wx:for="{{lists}}"
+                    wx:for-index="idx"
+                    wx:key="item"
+                    nickName="{{nickName}}"
+                    avatarUrl="{{avatarUrl}}"
+                    bindupdateSaveClick="updateSaveClick"
+                    bindupdateShareClick="updateSahareClick"
+                    id="{{'contents-'+index+'-'+idx}}"
+                    idx="{{idx}}"
+                    index="{{index}}"
+                    item="{{item}}"></contents>
+                <view wx:if="{{lists.length!=0}}"
+                    style="display: flex;justify-content: center;color: #bbb;font-size: 30rpx;padding:25rpx 0 50rpx 0;">到底啦，我是有底线的</view>
+                <view wx:if="{{nodata}}"
+                    style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%; flex-flow: column; position: absolute;left: 50%;top: 40%;  transform: translate(-50%,-50%);color: #bbb;font-size: 30rpx;">
+                    <image style="height: 180rpx;width: 180rpx;margin-bottom: 10rpx;"
+                        src="../images/img_blank.png"> </image>
+                    <text>空空如也</text>
+                </view>
+            </scroll-view>
+        </view>
+        <toast style="z-index: 9999;"
+            show="{{showtoast}}"
+            bind:playvideo="playvideo"></toast>
+    </searchview>
+
+</ancestor>

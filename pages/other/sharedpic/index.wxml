@@ -1,0 +1,18 @@
+<view bindlongpress="share" style="width: 100%;z-index: 9999;height: 100%;left: 0;top: 0;position: relative;box-sizing: border-box;padding-bottom: 120rpx;">
+  
+  <view style="padding-bottom:20rpx;display: flex;justify-content: center;">
+    <text style=" color: #8d5b5b;font-size: 30rpx; padding-top: 20rpx;" id="text_describe">长按图片，可直接「发送给朋友」</text>
+  </view>
+  <view wx:if="{{picRate}}" style="display: flex;position: fixed;height: 90vh;align-items: center;justify-content: center;width: 100vw; color: #a7a8aa;font-size: 32rpx; margin-bottom: 50rpx;background-color:#f5f5f5;">
+        <text>图片生成中...</text>
+  </view>
+  <view style="margin: 50rpx 0;display: flex;align-items: center;justify-content: center;">
+    <image show-menu-by-longpress src="{{src}}" bindload="load" style="width:86vw;box-shadow: 0rpx 4rpx 8rpx 2rpx #ccc;height: {{imgh}}vw;" mode="widthFix"></image>
+  </view>
+  <view style="position: absolute;left: -9999px;top:-9999px">
+    <canvas canvas-id='canvas-image' style="width: {{w}}px;height: {{h}}px;margin: 0 auto;background: #fff;"></canvas>
+  </view>
+  <view class="btn_class" id="save_btn">
+    <button class="button" bindtap="save" hover-class="button-hover" loading="{{loading}}">保存图片</button>
+  </view>
+</view>

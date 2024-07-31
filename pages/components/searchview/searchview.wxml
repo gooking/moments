@@ -1,0 +1,47 @@
+<view class="weui-search-bar" id="search">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" size="{{barHeight/3}}" type="search"></icon>
+            <input bindconfirm="wxSearchConfirm" bindinput="wxSearchInput" class="weui-search-bar__input" confirmType="search" maxlength="20" placeholder="请输入素材关键字" type="text" value="{{value}}"></input>
+            <view bindtap="wxSearchClear" class="weui-icon-clear" wx:if="{{value.length>0}}">
+                <icon size="{{barHeight/3}}" type="clear"></icon>
+            </view>
+        </view>
+    </view>
+    <view bindtap="wxSearchConfirm" class="weui-search-bar__cancel-btn">
+        <text data-key="search" wx:if="{{value.length>0}}">搜索</text>
+        <text data-key="back" wx:else>取消</text>
+    </view>
+</view>
+<view class="wxSearch" style="display: block;height:{{seachHeight+'px'}};top:{{barHeight+'px'}};">
+    <view class="wxSearchSlot" wx:if="{{wxSearchSlot}}">
+        <slot></slot>
+    </view>
+    <view class="{{wxSearchSlot?'preventTouchMove':'wSearchClass'}}">
+        <view class="wxSearchInner">
+            <scroll-view>
+                <view class="wxSearchMindKey">
+                    <view class="wxSearchMindKeyList">
+                        <view bindtap="wxSearchKeyTap" class="wxSearchMindKeyItem" data-key="{{item}}" wx:for="{{tipKeys}}" wx:key="key">{{item}}</view>
+                    </view>
+                </view>
+                <view class="wxSearchHistory" wx:if="{{his[0]}}">
+                    <view class="wxSearchHistoryItem">
+                        <text class="wxSearchHistoryItemTitle">历史搜索</text>
+                        <text bindtap="wxSearchDeleteAll" class="wxSearchHistoryItemClear">清除</text>
+                    </view>
+                    <view class="wxSearchKeyList">
+                        <text bindtap="wxSearchKeyTap" class="wxSearchKeyItem" data-key="{{item}}" wx:for="{{his}}" wx:key="key">{{item}}</text>
+                    </view>
+                </view>
+                <view class="wxSearchKey">
+                    <text class="wxSearchTitle" wx:if="{{hotKeys[0]}}">热门搜索</text>
+                    <view class="wxSearchKeyList">
+                        <text bindtap="wxSearchKeyTap" class="wxSearchKeyItem" data-key="{{item}}" wx:for="{{hotKeys}}" wx:key="key">{{item}}</text>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+     
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view wx:if="{{show}}" style="display: flex;justify-content: center;margin: 55rpx 0 0rpx 0;">
+  <view class="ani" style="border-radius: 50%;height: 6.5px;width: 6.5px;background-color: #585858;opacity:1;"></view>
+  <view class="ani1" style="border-radius: 50%;height: 6.5px;width: 6.5px;background-color: #585858;margin:0 6.5px;opacity:0.3;"></view>
+  <view class="ani2" style="border-radius: 50%;height: 6.5px;width:6.5px;background-color: #585858;opacity:0.3;"></view>
+</view>

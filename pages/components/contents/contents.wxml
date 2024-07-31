@@ -1,0 +1,36 @@
+<view>
+  <view class="item-class item-border-class">
+    <!-- 头像 -->
+    <view bindtap="jumpto" data-name="avatarUrl">
+      <image class="userinfo-avatar" src="{{avatarUrl}}" defaultAvatar="" type="userAvatarUrl"></image>
+    </view>
+    <!-- 昵称以及内容 -->
+    <view class="item-right-class">
+      <!-- 昵称 -->
+      <text class="userinfo-nickname" bindtap="jumpto" data-name="nickName">{{nickName||'微信用户'}}</text>
+      <!-- 内容 -->
+      <text bindlongpress="onCopy" bindtap="onPicShare" class="item-text-class" data-index="{{idx}}" data-value="{{item.descript}}" id="{{'item-text-'+item.id}}" space="ensp" style="background-color:{{item.textSelected?'#e5e5e5':''}}; height:{{showHeight==0?auto:showHeight+'px'}}">{{item.descript}}</text>
+      <!-- 内容太长隐藏 -->
+      <view bindtap="contentShow" class="show_class" wx:if="{{show}}">
+        <button>{{all?'收起':'全文'}}</button>
+      </view>
+      <!-- 图片 -->
+      <image lazyLoad bindtap="onPicShare" class="item-image-class" data-src="{{item.pic}}" id="{{'item-image-'+item.id}}" binderror="binderror" mode="widthFix" src="{{item.pic}}"></image>
+      <!-- 底部按钮 -->
+      <view class="item-btn" >
+        <button bindtap="showtoast" data-index="{{idx}}" data-value="{{item}}">
+          <view class="weui-loading item-btn-load" hidden="{{!item.saveLoad}}"></view>
+          <image hidden="{{item.saveLoad}}" src="../../images/save.png"></image>
+          <text>一键保存</text>
+          <view class="num_class">({{item.numberExt1}})</view>
+        </button>
+        <button bindtap="onShare" class="item-btn-class" data-index="{{idx}}" data-item="{{item}}" data-value="{{value}}" openType="share">
+          <image src="../../images/share.png"></image>
+          <text>分享</text>
+          <view class="num_class">({{item.numberExt2}})</view>
+        </button>
+      </view>
+    </view>
+  </view>
+  
+</view>

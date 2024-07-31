@@ -1,0 +1,31 @@
+.popover {
+  position: absolute;
+  z-index: 2;
+}
+
+.popover-view {
+  background-color: #0a0a0a;
+  border-radius: 16rpx;
+  display: flex;
+}
+
+.popover-view_triangle {
+  border-color: #0a0a0a #0a0a0a transparent transparent;
+  border-style: solid;
+  border-width: 6px;
+  content: "";
+  display: inline-block;
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.popover-view_triangle.top {
+  bottom: -6px;
+  transform: rotate(135deg);
+}
+
+.popover-view_triangle.bottom {
+  top: -6px;
+  transform: rotate(-45deg);
+}

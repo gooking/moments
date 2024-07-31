@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "contents":"../components/contents/contents",
+    "ancestor":"../components/contents/ancestor",
+    "toast":"../components/toast/toast"
+  }
+}

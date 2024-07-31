@@ -1,0 +1,6 @@
+<view class="popover" style="width:{{pw}}px;height:{{ph}}px;left:{{px}}px;top:{{py}}px;" wx:if="{{visible}}">
+    <view class="popover-view_triangle {{vertical}}" style="left:{{leftpx}}px;"></view>
+    <view class="popover-view" style="width:{{pw}}px;height:{{ph}}px;">
+        <slot></slot>
+    </view>
+</view>

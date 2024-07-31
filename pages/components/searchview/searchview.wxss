@@ -1,0 +1,254 @@
+.wxSearch {
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 26rpx;
+  width: 100%;
+}
+
+.wxSearchTitle {
+  color: #7f7f7f;
+  display: block;
+  font-size: 30rpx;
+  padding: 20rpx 10rpx 10rpx 20rpx;
+  text-align: left;
+}
+
+.wxSearchMindKeyItem {
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  padding: 20rpx 10rpx 20rpx 30rpx;
+}
+
+.wxSearchKeyList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30rpx;
+}
+
+.wxSearchKeyItem {
+  background-color: #f5f5f5;
+  border-radius: 6rpx;
+  color: #545454;
+  font-size: 28rpx;
+  margin: 10rpx;
+  padding: 16rpx 46rpx;
+}
+
+.wxSearchHistoryItem {
+  display: flex;
+  padding: 20rpx 10rpx 10rpx 20rpx;
+}
+
+.wxSearchHistoryItemTitle {
+  color: #7f7f7f;
+  flex: 8;
+  font-size: 30rpx;
+}
+
+.wxSearchHistoryItemDel {
+  border: 1px solid #eee;
+  border-radius: 4rpx;
+  flex: 1;
+  font-size: 26rpx;
+  padding-bottom: 4rpx;
+  padding-top: 4rpx;
+  text-align: center;
+}
+
+.wxSearchHistoryItemClear {
+  color: #7f7f7f;
+  font-size: 30rpx;
+}
+
+.wxSearchSlot {
+  background-color: initial;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.preventTouchMove {
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.wxSearchInner {
+  background-color: #fff;
+  flex: 1;
+  overflow: scroll;
+  padding-bottom: 20rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.adContainer {
+  border-color: #eee #f5f5f5 #f5f5f5;
+  border-radius: 20rpx;
+  border-top: 1px solid #f5f5f5;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: hidden;
+  padding-bottom: 30rpx;
+  position: fixed;
+  width: 90%;
+  z-index: 0;
+}
+
+.wSearchClass {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.advertisement_class {
+  height: 250rpx;
+  width: 100%;
+}
+
+.takeaway_class {
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.takeaway_br_class {
+  background-color: #f9f9f9;
+  border-radius: 20rpx;
+  margin: 20rpx 30rpx 0rpx;
+  padding: 10rpx 30rpx 30rpx;
+}
+
+.takeaway_br_class image {
+  height: 50rpx;
+  margin-right: 20rpx;
+  width: 50rpx;
+}
+
+.takeaway_br_class view {
+  align-items: center;
+  display: flex;
+  padding-bottom: 16rpx;
+  padding-top: 16rpx;
+}
+
+.takeaway_br_class button {
+  background-color: #fcf6de;
+  border: 3rpx solid #d7aa5c;
+  border-radius: 30rpx;
+  color: #1d1e15;
+  font-size: 26rpx;
+  line-height: normal;
+  padding: 7rpx 20rpx;
+  position: absolute;
+  right: 50rpx;
+}
+
+.takeaway_br_class button:active {
+  background-color: #faf1cb;
+  color: #70706d;
+}
+
+.takeaway_text_class {
+  border: 1rpx solid #bababa;
+  border-radius: 10rpx;
+  color: #bababa;
+  font-size: 20rpx;
+  margin-left: 10rpx;
+  padding: 1rpx 10rpx;
+}
+
+.weui-search-bar {
+  align-items: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  padding: 16rpx 20rpx;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.weui-icon-search {
+  font-size: inherit;
+  margin-right: 16rpx;
+}
+
+.weui-icon-search_in-box {
+  height: 50rpx;
+  left: 20rpx;
+  position: absolute;
+  top: 19rpx;
+  width: 50rpx;
+}
+
+.weui-search-bar__text {
+  display: inline-block;
+  font-size: 28rpx;
+  vertical-align: middle;
+}
+
+.weui-search-bar__form {
+  -webkit-box-flex: 1;
+  background: #f0f0f0;
+  border-radius: 20px;
+  flex: auto;
+  position: relative;
+}
+
+.weui-search-bar__box {
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.weui-search-bar__input {
+  font-size: 30rpx;
+  height: 70rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+}
+
+.weui-icon-clear {
+  font-size: 0;
+  padding: 19rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.weui-search-bar__label {
+  background: #fff;
+  border-radius: 6rpx;
+  bottom: 0;
+  color: #9b9b9b;
+  left: 0;
+  line-height: 56rpx;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 2;
+}
+
+.weui-search-bar__cancel-btn {
+  color: #575757;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+  white-space: nowrap;
+}

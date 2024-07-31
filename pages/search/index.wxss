@@ -1,0 +1,12 @@
+.result_class {
+  background-color: #fff;
+}
+
+.result_class,.tab-content {
+  height: 100%;
+  width: 100%;
+}
+
+.refresh_class {
+  margin-top: 50rpx;
+}

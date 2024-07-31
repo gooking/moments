@@ -1,0 +1,22 @@
+.weui-tabs {
+  width: 100%;
+}
+
+.weui-tabs-bar__wrp {
+  background: #fff;
+  width: 100%;
+}
+
+.weui-tabs-bar__content {
+  white-space: nowrap;
+  width: 100%;
+}
+
+.weui-tabs-bar__item {
+  display: inline-block;
+}
+
+.weui-tabs-bar__title {
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}

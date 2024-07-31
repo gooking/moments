@@ -1,0 +1,10 @@
+<view style="position: fixed;left: 0;right: 0;bottom: 0;top:0;margin: auto;display: flex;align-items: center;justify-content: center;flex-direction: column;background-color: #000000;z-index: 1005;">
+<image wx:if="{{msg.beChosen&&showimg&&finish===0}}" style="width: 100vw;height: 80vw;margin-bottom: 30rpx;" src="{{msg.image}}"></image>
+ <view wx:if="{{finish===0}}" bindtap="play" class="animation" style="width: 80vw;height: 110rpx;background-color: #107c41;color: white;border-radius: 15rpx;font-size: 45rpx;font-weight: 600;display: flex;align-items: center;justify-content: center;">
+ {{msg.beChosen?msg.txt1:msg.txt}}
+ </view>
+ <view wx:elif="{{finish===1}}" style="width: 80vw;height: 110rpx;display: flex;align-items: center;justify-content: center;font-size: 45rpx;font-weight: 600;color: white;">正在帮砍中..剩余 {{count}} 秒</view>
+ <view wx:else class="animation" bindtap="close" class="animation"style="width: 80vw;height: 110rpx;background-color: #107c41;color: white;border-radius: 15rpx;font-size: 45rpx;font-weight: 600;display: flex;align-items: center;justify-content: center;">
+  {{msg.txt2}}
+ </view>
+</view>

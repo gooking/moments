@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/discover/index",
+        "pages/collect/index",
+        "pages/mine/index",
+        "pages/mine/faq/index",
+        "pages/mine/serve/index",
+        "pages/other/sharedpic/index",
+        "pages/other/shareme/index",
+        "pages/search/index",
+        "pages/details/index",
+        "pages/mine/suggest/index",
+        "pages/mine/feedback/index",
+        "pages/mine/submitContent/index",
+        "pages/about/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#B2B2B2",
+        "selectedColor": "#eb6c97",
+        "borderStyle": "black",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "pages/images/home.png",
+                "selectedIconPath": "pages/images/home_selected.png"
+            },
+            {
+                "text": "发现",
+                "pagePath": "pages/discover/index",
+                "iconPath": "pages/images/discover.png",
+                "selectedIconPath": "pages/images/discover_selected.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/mine/index",
+                "iconPath": "pages/images/mine.png",
+                "selectedIconPath": "pages/images/mine_selected.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "mp-html": "mp-html",
+        "van-field": "@vant/weapp/field/index",
+        "van-dialog": "@vant/weapp/dialog/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index"
+    },
+    "sitemapLocation": "sitemap.json"
+}

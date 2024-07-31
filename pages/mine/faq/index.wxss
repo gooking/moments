@@ -1,0 +1,78 @@
+.faq_class {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50rpx;
+}
+
+.title_class {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.content_class {
+  color: #666;
+  display: flex;
+  font-size: 28rpx;
+  margin: 15rpx 10rpx 5rpx;
+}
+
+.serials_class {
+  color: #525252;
+  font-size: 16rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.tutorials_class {
+  color: #123a75;
+}
+
+.item_partition_class {
+  background-color: #f0f0f0;
+  height: 20rpx;
+  margin-bottom: 50rpx;
+  margin-top: 50rpx;
+}
+
+.item_class {
+  margin: 0rpx 50rpx;
+}
+
+.sub {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100vw;
+}
+
+.placeholder-view {
+  height: 100rpx;
+  width: 100%;
+}
+
+.btn_class {
+  background-color: #fff;
+  border-top: 2rpx solid #eee;
+  bottom: 0rpx;
+  height: 110rpx;
+  left: 0rpx;
+  padding: 20rpx 0rpx;
+  position: fixed;
+  right: 0rpx;
+}
+
+.btn_class,.btn_class button {
+  display: flex;
+}
+
+.btn_class button {
+  align-items: center;
+  background-color: grey;
+  border-radius: 6rpx;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 500;
+  height: 80rpx;
+  justify-content: center;
+  width: 90%;
+}

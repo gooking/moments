@@ -1,0 +1,124 @@
+<ancestor>
+
+  <view id="nav"
+    style="position: fixed;top:0;width: 100vw;left: 0;background-color: white;">
+    <view style="height:{{m.height}}px;padding-top:{{s.statusBarHeight+(m.top-s.statusBarHeight)}}px;padding-bottom:{{(m.top-s.statusBarHeight)}}px;width:{{m.left}}px;">
+      <view class="navbar">
+        <button bindtap=""
+          open-type="share"
+          data-t="top"
+          class="home_share_class"
+          style="width: {{m.height}}px;height: {{m.height}}px;">
+          <image src="../images/home_share.png"
+            style="width: {{m.height-m.height/3-4}}px;height: {{m.height-m.height/3-4}}px;"></image>
+          <text style="font-size: {{m.height/3}}px; line-height: {{m.height/3}}px;margin-top: 3px;">分享</text>
+        </button>
+        <view bindtap="onSearch"
+          class="search-bar__form">
+          <view class="search-bar__box"
+            style="height: {{m.height}}px;">
+            <icon size="{{m.height/2+1}}"
+              type="search"></icon>
+            <input class="search-bar__input"
+              disabled="true"
+              placeholder="搜索素材"
+              style="font-size: {{m.height/2}}px"
+              type="text"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view>
+      <!-- 轮播图 -->
+      <swiper style="height: 35vw;"
+          autoplay="true"
+          circular="{{circular}}"
+          interval="{{interval}}"
+          duration="{{duration}}">
+          <block wx:for="{{bannerList}}"
+            wx:key="*this">
+            <swiper-item >
+              <image bindtap="jump"
+                  mode="aspectFill"
+                  data-item="{{item}}"
+                  style="width:95vw;height:32vw;border-radius: 20rpx;margin-left: 2.5vw;margin-top: 1vw;"
+                  src="{{item.picUrl}}"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+    
+      <scroll-view scroll-x="true"
+        scroll-into-view="item_{{currentView}}">
+        <view style="white-space: nowrap;width: 100%;background-color: white;">
+          <view bindtap="tabclick"
+            style="display: flex;"
+            data-index="{{index}}"
+            id="item_{{index}}"
+            style="display: inline-block;color: {{activeTab===index?'#eb6c97':'#b2b2b2'}}; font-size: {{activeTab===index?'35rpx':'32rpx'}};"
+            wx:for="{{tabs}}"
+            wx:key="id">
+            <view style="margin: 0rpx 30rpx;padding-bottom: 12rpx; border-bottom: 2px solid transparent;border-bottom-color: {{activeTab===index?'#eb6c97':'transparent'}};display: inline-block;">
+              <text>{{item.name}}</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <tab-swiper navheight="{{navheight?navheight:0}}"
+    id="id-tab-swiper"
+    tabs="{{tabs}}"
+    contentHeight="{{contentHeight?contentHeight:0}}"
+    swiperchange="{{swiperchange?swiperchange:0}}"
+    bind:morelist="morelist">
+    <block wx:for="{{lists}}"
+      wx:for-item="sItem"
+      wx:key="key">
+      <scroll-view style="height: 100%;margin-top: 17rpx;"
+        scroll-y
+        refresher-triggered="{{showloading}}"
+        refresher-enabled
+        bindrefresherrefresh="herrefresh"
+        bindscrolltolower="tolower"
+        lower-threshold="150"
+        data-index="{{index}}"
+        slot="tab-content-{{index}}">
+        <loading style="height: 30rpx;"
+          show="{{bool}}"></loading>
+        <contents bind:showtoast="showtoast"
+          wx:for="{{sItem.array}}"
+          wx:for-index="idx"
+          wx:key="item"
+          bindupdateSaveClick="updateSaveClick"
+          bindupdateShareClick="updateSahareClick"
+          id="{{'contents-'+index+'-'+idx}}"
+          idx="{{idx}}"
+          index="{{index}}"
+          nickName="{{nickName}}"
+          avatarUrl="{{avatarUrl}}"
+          item="{{item}}"></contents>
+        <view wx:if="{{sItem.array.length!=0}}"
+          style="display: flex;justify-content: center;color: #bbb;font-size: 30rpx;padding:50rpx 0 50rpx 0;">{{sItem.bottom?'到底啦，我是有底线的':''}}</view>
+        <view wx:if="{{sItem.nodata}}"
+          style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%; flex-flow: column; position: absolute;left: 50%;top: 40%;  transform: translate(-50%,-50%);color: #bbb;font-size: 30rpx;">
+          <image style="height: 180rpx;width: 180rpx;margin-bottom: 10rpx;"
+            src="../images/img_blank.png"> </image>
+          <text>空空如也</text>
+        </view>
+      </scroll-view>
+    </block>
+  </tab-swiper>
+  <view class="btn_function_class">
+    <view class="btn_refresh_class"
+      hoverClass="btn_refresh_hover_class">
+      <image bindtap="onBtnRefresh"
+        src="../images/img_refresh.png"></image>
+    </view>
+  </view>
+  <toast show="{{showtoast}}"
+    bind:playvideo="playvideo"></toast>
+
+
+</ancestor>

@@ -1,0 +1,42 @@
+.page {
+  background-color: #ededed;
+}
+
+.scroll_class {
+  background-color: #ededed;
+}
+
+.scroll_class {
+  padding-bottom: 50rpx;
+}
+
+.btn_class {
+  margin-top: 100rpx;
+  padding-bottom: 20rpx;
+}
+
+.btn_class button {
+  align-items: center;
+  background-color: #09bb07;
+  border-radius: 60rpx;
+  border-style: solid;
+  border-width: 0rpx;
+  box-shadow: 0rpx 8rpx 16rpx 4rpx #ccc;
+  color: #fff;
+  display: flex;
+  font-size: 32rpx;
+  height: 80rpx;
+  justify-content: center;
+  width: 300rpx;
+}
+
+.btn_class button::after {
+  border: none;
+}
+
+.adContainer {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 60rpx;
+  width: 90%;
+}

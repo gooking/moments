@@ -1,0 +1,9 @@
+<view wx:if="{{show}}" style="position: fixed;background-color: hsla(0, 0%, 0%, 0.533);height: 100vh;width: 100vw;top: 0;right: 0;display: flex;justify-content: center;">
+  <view style="position: absolute;margin-top:39vh;width: 90vw;background-color: white;text-align: center;font-size: 30rpx;color: #333333;">
+    <view style="margin-top: 55rpx;">保存次数已用完</view>
+    <view style="width: 100%;height:95rpx;display: flex;margin-top: 85rpx;border-top:0.05rem solid #cccccc;">
+    <view bindtap="playvideo" style="width: 50%;border-right: 0.05rem solid #cccccc;display: flex;align-items: center;justify-content: center;color: #2b3c8a;">看广告领次数</view>
+    <view bindtap="close" style="width: 50%;display: flex;align-items: center;justify-content: center">取消</view>
+    </view>
+  </view>
+  </view>

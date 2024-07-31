@@ -1,0 +1,42 @@
+<view bindtouchstart="onPopHide">
+<slot></slot>
+<popover id="popover">
+        <popover-item hasline bindtap="onClickPop" data-content="{{content}}" id="copy-id">复制</popover-item>
+        <popover-item hasline bindtap="onCollect" data-value="{{value}}" data-c="{{collect?'add':'del'}}" id="collect-id">{{collect?'收藏':'删除'}} </popover-item>
+        <popover-item id="share-id">
+            <button bindtap="onTranspond" class="popover-btn-item" data-value="{{value}}" id="share-btn-id" openType="share">转发</button>
+        </popover-item>
+</popover>
+
+<view class="fadeIn" hidden="{{dDialogHidden}}">
+        <view class="weui-mask"></view>
+        <view class="weui-dialog">
+            <view class="weui-dialog__">
+                <view class="weui-dialog__hd">
+                    <strong class="weui-dialog__title">{{picSucceed==0&&copySucceed?'保存成功':'保存失败'}}</strong>
+                </view>
+                <view class="weui-dialog__bd">
+                    <view class="dialog_nr" style="color: {{copySucceed?'':'#d81e06'}}">
+                        <text>1. 文案复制{{copySucceed?'成功':'失败'}}</text>
+                        <image src="{{copySucceed?'../../images/d_succeed.png':'../../images/d_error.png'}}"></image>
+                    </view>
+                    <view class="dialog_nr" style="color: {{picSucceed==0?'':'#d81e06'}}">
+                        <text>2. 图片素材保存{{picDefeated}}</text>
+                        <image src="{{picSucceed==0?'../../images/d_succeed.png':'../../images/d_error.png'}}"></image>
+                    </view>
+                    <view class="dialog_nr" style="color: {{picSucceed==0&&copySucceed?'#191919':''}} ">3. 从相册中选择图片素材，粘贴文案，发布朋友圈</view>
+                </view>
+                <view class="weui-dialog__ft">
+                    <block wx:if="{{picSucceed==1}}">
+                        <a bindtap="closeDialog" class="weui-dialog__btn weui-dialog__btn_default">取消</a>
+                        <a bindtap="toAuthorize" class="weui-dialog__btn weui-dialog__btn_primary">去授权</a>
+                    </block>
+                    <block wx:else>
+                        <button bindtap="closeDialog" class="weui-dialog__btn {{hiddenSubscribe?'weui-dialog__btn_primary':'weui-dialog__btn_default'}} ">知道了</button>
+                        <button bindtap="toSubscription" class="weui-dialog__btn weui-dialog__btn_primary" hidden="{{hiddenSubscribe}}">素材更新提醒</button>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
